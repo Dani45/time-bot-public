@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.env*
+venv/
+venv*/
+.envrc
+.Python
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# GitHub Actions
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

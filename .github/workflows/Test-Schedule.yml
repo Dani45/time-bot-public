@@ -1,0 +1,14 @@
+name: Test Schedule
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Cada 5 minutos (GitHub Actions schedules run at most every 5 minutes)
+  workflow_dispatch:
+
+jobs:
+  test:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test execution
+        run: echo "✅ Schedule is working! $(date)"
